@@ -1,0 +1,57 @@
+[size=5][b]Hearthtalk — AI dialogue for Going Medieval[/b][/size]
+by CarlosNahuelcoy, author of [url=https://github.com/CarlosNahuelcoy/EchoColony]EchoColony[/url] for RimWorld
+
+Your villagers really talk. Every chat the game generates between colonists becomes a real AI dialogue in bubbles above their heads. You can talk to any colonist yourself, they come to you with their worries, and what you say changes their mood, their work and their schedule.
+
+[size=4][b]Features[/b][/size]
+[list]
+[*][b]Colonist dialogue[/b]: native chats ("Lambert talked about pilgrimages with Aethelman…") become 2–8 line dialogues, with bubbles and a live log.
+[*][b]One-on-one chat[/b]: press [i]Talk[/i] on any colonist. They know their backstory, mood, needs, relationships, jobs, schedule and memories. You can edit, delete or regenerate any message, and pause the game while chatting.
+[*][b]Private messages[/b]: colonists come to you on their own during raids, traders, bad weather, injuries, hunger, exhaustion… or just to chat.
+[*][b]Mood[/b]: kind words or harsh ones give a visible mood thought (±3 to ±10).
+[*][b]Orders[/b]: ask a colonist to farm, stop mining or sleep earlier. If they agree, their job priorities and schedule really change. They may refuse.
+[*][b]Memory[/b]: every night colonists write a short memory, and the last 7 days shape their conversations.
+[*][b]Meetings[/b]: select several colonists and press [i]Talk[/i] to talk to all of them at once.
+[*][b]Chronicler[/b]: a narrator who comments on events, can be chatted with and, if you allow it, can bring traders, visitors, weather or raids.
+[*][b]Thoughts[/b]: colonists mutter when something happens to them.
+[*][b]Custom personalities[/b], [b]global instructions[/b], [b]export to text[/b] and [b]import from another save[/b].
+[*]Native-looking windows, a [b]HEARTHTALK[/b] tab on the top bar, no hotkeys taken.
+[*]English interface by default, Spanish available in Settings. Dialogue in any language.
+[/list]
+
+[size=4][b]AI providers[/b][/size]
+[list]
+[*][b]Player2[/b] (default, free): works out of the box with the Player2 app, or sign in with your browser.
+[*][b]Gemini[/b] (free tier), [b]OpenRouter[/b], or any [b]local / OpenAI-compatible[/b] server (LM Studio, Ollama, KoboldCpp).
+[/list]
+
+[size=4][b]Requirements[/b][/size]
+[list]
+[*][b]BepInEx 5 x64[/b]. It is included in the "Hearthtalk and BepInEx" file.
+[*]An AI provider (Player2 is free).
+[/list]
+
+[size=4][b]Installation[/b][/size]
+[list=1]
+[*]In Steam: right-click Going Medieval > Manage > Browse local files.
+[*]Extract [b]everything[/b] from the zip into that folder, so [i]winhttp.dll[/i] and the [i]BepInEx[/i] folder sit next to [i]Going Medieval.exe[/i].
+[*]Start the game and load your village. Open the [b]HEARTHTALK[/b] tab, then Settings, and pick your AI provider.
+[*]Recommended: Options > Graphics > [i]Run in background[/i].
+[/list]
+Already have BepInEx 5? Use the "Hearthtalk" file (mod only) instead.
+Don't enable anything in the game's Mods menu: BepInEx loads Hearthtalk.
+Linux / Steam Deck: add [i]WINEDLLOVERRIDES="winhttp=n,b" %command%[/i] to the launch options.
+
+[size=4][b]Uninstall[/b][/size]
+[list]
+[*]Mod only: delete [i]BepInEx/plugins/Hearthtalk.dll[/i].
+[*]Its data: delete [i]BepInEx/config/Hearthtalk/[/i] and [i]BepInEx/config/hearthtalk.cfg[/i].
+[*]BepInEx too: delete [i]winhttp.dll[/i], [i]doorstop_config.ini[/i], [i].doorstop_version[/i], [i]changelog.txt[/i] and the [i]BepInEx[/i] folder.
+[/list]
+[b]Save-safe:[/b] saves load fine after removing the mod.
+
+[size=4][b]Links[/b][/size]
+Source code, issues and releases: [url=https://github.com/CarlosNahuelcoy/Hearthtalk]github.com/CarlosNahuelcoy/Hearthtalk[/url]
+Bug reports: please attach [i]BepInEx/LogOutput.log[/i].
+
+[size=2]Bundles BepInEx 5.4.23.2 (LGPL-2.1). Not affiliated with Foxy Voxel.[/size]

@@ -1,0 +1,111 @@
+HEARTHTALK 1.0.0 — Diálogos con IA para Going Medieval
+por CarlosNahuelcoy · https://github.com/CarlosNahuelcoy/Hearthtalk
+
+======================================================================
+ ESPAÑOL
+======================================================================
+
+INSTALACIÓN (zip "Hearthtalk and BepInEx", lo normal)
+------------------------------------------------------
+1. En Steam: clic derecho en Going Medieval > Administrar > Ver archivos locales.
+   Se abre la carpeta donde está "Going Medieval.exe".
+2. Extrae TODO el contenido del zip en esa carpeta, de modo que
+   winhttp.dll y la carpeta BepInEx queden al lado de "Going Medieval.exe".
+   Si pregunta por reemplazar archivos, di que sí.
+3. Abre el juego. La primera vez tarda un poco más (BepInEx prepara su caché).
+4. Carga tu aldea. Arriba aparece la pestaña HEARTHTALK. Entra en Ajustes y
+   elige el proveedor de IA (Player2 es gratis y viene por defecto).
+5. Recomendado: Opciones > Gráficos > "Ejecutar en segundo plano".
+   Si no, el juego se congela al cambiar de ventana y las respuestas esperan.
+
+¿Ya tienes BepInEx 5 instalado? Usa el zip "Hearthtalk" y extráelo igual en la
+carpeta del juego (solo añade BepInEx/plugins/Hearthtalk.dll).
+
+NO actives nada en el menú de Mods del juego: ese menú solo carga mods de
+datos. Hearthtalk se carga solo mediante BepInEx.
+
+Linux / Steam Deck (Proton): añade esto a las opciones de lanzamiento de Steam:
+   WINEDLLOVERRIDES="winhttp=n,b" %command%
+
+ACTUALIZAR
+----------
+Sustituye BepInEx/plugins/Hearthtalk.dll por el nuevo. Tus chats y ajustes se
+conservan.
+
+DESINSTALAR
+-----------
+Solo el mod:
+   Borra  BepInEx/plugins/Hearthtalk.dll
+Además, sus datos (chats, recuerdos, personalidades, ajustes y tu clave de IA):
+   Borra  BepInEx/config/Hearthtalk/   y   BepInEx/config/hearthtalk.cfg
+Quitar también BepInEx (si ningún otro mod lo usa):
+   Borra  winhttp.dll, doorstop_config.ini, .doorstop_version, changelog.txt
+   y la carpeta BepInEx.
+O en Steam: Propiedades > Archivos instalados > Verificar integridad
+(esto no borra BepInEx; hay que borrarlo a mano).
+
+Tus partidas son seguras: cargan igual sin el mod. El juego descarta en
+silencio los efectos de ánimo de Hearthtalk que ya no conoce.
+
+PROBLEMAS
+---------
+- No aparece la pestaña HEARTHTALK: comprueba que winhttp.dll está junto a
+  "Going Medieval.exe" y mira BepInEx/LogOutput.log.
+- Las respuestas no llegan: revisa el proveedor en Ajustes. Con Player2, la
+  app de Player2 debe estar abierta o hay que "Conectar con el navegador".
+- Reporta errores en GitHub (Issues) adjuntando BepInEx/LogOutput.log.
+
+======================================================================
+ ENGLISH
+======================================================================
+
+INSTALL (the "Hearthtalk and BepInEx" zip, the usual one)
+----------------------------------------------------------
+1. In Steam: right-click Going Medieval > Manage > Browse local files.
+   This opens the folder that contains "Going Medieval.exe".
+2. Extract EVERYTHING from the zip into that folder, so that winhttp.dll and
+   the BepInEx folder sit next to "Going Medieval.exe". Overwrite if asked.
+3. Start the game. The first launch takes a little longer (BepInEx builds its
+   cache).
+4. Load your village. A HEARTHTALK tab appears on the top bar. Open Settings
+   and pick the AI provider (Player2 is free and the default).
+5. Recommended: Options > Graphics > "Run in background". Otherwise the game
+   freezes when you switch windows and replies wait until you come back.
+
+Already have BepInEx 5? Use the "Hearthtalk" zip and extract it the same way
+(it only adds BepInEx/plugins/Hearthtalk.dll).
+
+Do NOT enable anything in the game's Mods menu: that menu only loads data
+mods. Hearthtalk is loaded by BepInEx.
+
+Linux / Steam Deck (Proton): add this to the Steam launch options:
+   WINEDLLOVERRIDES="winhttp=n,b" %command%
+
+UPDATE
+------
+Replace BepInEx/plugins/Hearthtalk.dll with the new one. Chats and settings
+are kept.
+
+UNINSTALL
+---------
+Mod only:
+   Delete  BepInEx/plugins/Hearthtalk.dll
+Also its data (chats, memories, personalities, settings and your AI key):
+   Delete  BepInEx/config/Hearthtalk/   and   BepInEx/config/hearthtalk.cfg
+Remove BepInEx too (if no other mod uses it):
+   Delete  winhttp.dll, doorstop_config.ini, .doorstop_version, changelog.txt
+   and the BepInEx folder.
+
+Your saves are safe: they load fine without the mod. The game silently drops
+Hearthtalk's mood effects it no longer knows.
+
+TROUBLESHOOTING
+---------------
+- No HEARTHTALK tab: check that winhttp.dll is next to "Going Medieval.exe"
+  and look at BepInEx/LogOutput.log.
+- No replies: check the provider in Settings. With Player2, the Player2 app
+  must be running, or use "Connect with browser".
+- Report bugs on GitHub (Issues) with BepInEx/LogOutput.log attached.
+
+----------------------------------------------------------------------
+Includes BepInEx 5.4.23.2 (https://github.com/BepInEx/BepInEx, LGPL-2.1).
